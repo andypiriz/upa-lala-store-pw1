@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Upa Lalá Store</title>
+    <!-- Hoja de estilos -->
+    <link rel="stylesheet" href="../css/estilos.css">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../imgs/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <div>
+            <a href="../index.html">
+                <img src="../imgs/logo-sin-texto.png" alt="Logo de Upa Lalá Store" id="logo">
+            </a>
+            <ul>
+                <li>
+                    <a href="">
+                        <img src="../imgs/lupa.svg" alt="Ícono de lupa">
+                    </a>
+                </li>
+                <li>
+                    <a href="login.html">
+                        <img src="../imgs/usuario.svg" alt="Ícono de usuario">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="../imgs/carrito.svg" alt="Ícono de bolsa de compras">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <nav>
+            <ul class="centrado-chico">
+                <li>
+                    <a href="../index.html" class="activo">Inicio</a>
+                </li>
+                <li>
+                    <a href="catalogo.html">Catálogo</a>
+                </li>
+                <li>
+                    <a href="#">Blog</a>
+                </li>
+                <li>
+                    <a href="#">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- FIN DEL HEADER -->
+
+    <!-- MAIN -->
+    <main>
+        <!-- Portada -->
+        <div id="portada-contacto">
+            <div>
+                <h1>Contáctanos</h1>
+                <p>Inicio > Contacto</p>
+            </div>
+        </div>
+
+        <!-- Primer sección -->
+        <section id="primer-seccion-contacto">
+            <div>
+                <img src="../imgs/telefono.png" alt="Ícono de llamada">
+                <h4>Teléfonos</h4>
+                <p><strong>Tel:</strong> 2233 4455</p>
+                <p><strong>Cel:</strong> 099099099</p>
+            </div>
+            <div>
+                <img src="../imgs/mail.png" alt="Ícono de mail">
+                <h4>Email</h4>
+                <p><strong>Tienda:</strong> contacto@upalala.com.uy</p>
+                <p><strong>Soporte:</strong> soporte@upalala.com.uy</p>
+            </div>
+            <div>
+                <img src="../imgs/mapa.png" alt="Ícono de mapa">
+                <h4>Dirección</h4>
+                <p>Avenida Siempre Viva 742</p>
+            </div>
+        </section>
+
+        <!-- Segunda sección - Formulario de contacto-->
+        <section id="segunda-seccion-contacto">
+            <div class="centrado-mediano">
+                <h2>Formulario de contacto</h2>
+                <form action="" id="formulario-contacto">
+                    <!-- Nombre -->
+                    <div id="campo-nombre">
+                        <label for="id-nombre">Nombre <span>*</span></label>
+                        <input type="text" name="nombre" id="id-nombre" class="inputs" placeholder="Escribe tu nombre">
+                        <!-- Mensaje campo con error -->
+                        <p class="input-error" id="error-nombre"></p>
+                    </div>
+                    <!-- Correo electrónico -->
+                    <div id="campo-correo">
+                        <label for="id-correo">Correo Electrónico <span>*</span></label>
+                        <input type="email" name="correo" id="id-correo" class="inputs"
+                            placeholder="Escribe un correo electrónico">
+                        <!-- Mensaje campo con error -->
+                        <p class="input-error" id="error-correo"></p>
+                    </div>
+                    <!-- Teléfono -->
+                    <div id="campo-telefono">
+                        <label for="id-telefono">Teléfono</label>
+                        <input type="number" name="telefono" id="id-telefono" class="inputs"
+                            placeholder="Escribe un teléfono">
+                        <!-- Mensaje campo con error -->
+                        <p class="input-error" id="error-telefono"></p>
+                    </div>
+                    <!-- Categoría -->
+                    <div id="campo-categoria">
+                        <label for="id-categoria">Categoría<span>*</span></label>
+                        <select name="categoria" id="id-categoria" class="inputs">
+                            <option selected>*Seleccione una categoría*</option>
+                            <option value="compra">Compra</option>
+                            <option value="venta">Venta</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </div>
+                    <!-- Newsletter -->
+                    <div id="campo-newsletter">
+                        <label for="id-newsletter">¿Deseas recibir nuestro Newsletter?&#40;opcional&#41;</label>
+                        <input type="checkbox" name="newsletter" id="id-newsletter">
+                    </div>
+                    <!-- Mensaje -->
+                    <div id="campo-mensaje">
+                        <label for="id-mensaje">Envíanos tu comentario <span>*</span></label><br>
+                        <textarea name="mensaje" id="id-mensaje" cols="30" rows="10"
+                            placeholder="Tu Mensaje"></textarea>
+                        <!-- Mensaje campo con error -->
+                        <p class="input-error" id="error-mensaje"></p>
+                    </div>
+                    <!-- Bases -->
+                    <div id="campo-bases">
+                        <label for="id-bases">Acepto las bases y condicones<span>*</span></label>
+                        <input type="checkbox" name="bases" id="id-bases">
+                        <!-- Mensaje campo con error -->
+                        <p class="input-error" id="error-bases"></p>
+                    </div>
+                    <!-- Mensaje de error por campos vacíos -->
+                    <div class="mensaje-error" id="mensaje-error">
+                        <p><b>&#10060; [ERROR]:</b> Los campos no pueden quedar vacíos</p>
+                    </div>
+                    <!-- Botones -->
+                    <div class="campo-botones">
+                        <input class="btn-rosa" id="btn-envio" type="submit" value="Enviar">
+                        <input class="btn-cyan" type="reset" value="Cancelar">
+                        <!-- Mensaje de envío exitoso -->
+                        <p class="mensaje-exito" id="mensaje-exito">&#9989; ¡Formulario enviado con éxito!
+                        </p>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <!-- FIN DEL MAIN -->
+
+
+    <!-- FOOTER -->
+    <footer>
+        <img src="../imgs/Logo.png" alt="Logo de Upa Lalá Store">
+        <div>
+            <p id="fecha-actual"></p>
+            <div>
+                <p>Copyright © Upa Lalá Store 2021. Todos los derechos reservados.</p>
+                <small>Imágenes de catálogo extraídas de amazon.com</small>
+            </div>
+        </div>
+        <div>
+            <a href="https://www.facebook.com/" target="_blank">
+                <img src="../imgs/facebook.png" alt="Ícono de Fcaebook">
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+                <img src="../imgs/instagram.png" alt="Ícono de Instagram">
+            </a>
+            <a href="mailto:upalalauy@gmail.com" target="_blank">
+                <img src="../imgs/gmail.png" alt="Ícono de Gmail">
+            </a>
+        </div>
+    </footer>
+    <!-- FIN DEL FOOTER -->
+
+    <!-- SCRIPTS -->
+    <script src="../js/contacto.js"></script>
+
+</body>

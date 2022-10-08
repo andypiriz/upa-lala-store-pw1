@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Upa Lalá Store</title>
+    <!-- Hoja de estilos -->
+    <link rel="stylesheet" href="../css/estilos.css">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../imgs/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <div>
+            <a href="../index.html">
+                <img src="../imgs/logo-sin-texto.png" alt="Logo de Upa Lalá Store" id="logo">
+            </a>
+            <ul>
+                <li>
+                    <a href="">
+                        <img src="../imgs/lupa.svg" alt="Ícono de lupa">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="../imgs/usuario.svg" alt="Ícono de usuario">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="../imgs/carrito.svg" alt="Ícono de bolsa de compras">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <nav>
+            <ul class="centrado-chico">
+                <li>
+                    <a href="../index.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="catalogo.html">Catálogo</a>
+                </li>
+                <li>
+                    <a href="#">Blog</a>
+                </li>
+                <li>
+                    <a href="contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- FIN DEL HEADER -->
+
+    <!-- MAIN -->
+    <main id="main-login">
+
+        <!-- Modal -->
+        <div class="modal" id="modal-de-login">
+            <div class="login-fondo"></div>
+            <div class="login-contenedor">
+                <h1 id="login-titulo">Ingresar </h1>
+                <!-- Formulario de Login -->
+                <form action="" id="login-form">
+                    <input type="text" name="correo" class="inputs" placeholder="Correo electrónico">
+                    <input type="password" name="contrasena" class="inputs" placeholder="Contraseña">
+                    <div class="mensaje-error" id="login-error">
+                        <p><b>&#10060;</b> Los campos no pueden quedar vacíos</p>
+                    </div>
+                    <input type="submit" value="Ingresar" id="login-submit" class="btn-cyan">
+                </form>
+                <!-- Botón de cerrar -->
+                <a id="cerrar-login-btn">x</a>
+                <!-- Saludo -->
+                <h3 id="saludo"> <img src="../imgs/recreo.png" alt="Ícono de niño jugando">¡Hola <span
+                        id="nombre-usuario"> </span>! Bienvenid@</h3>
+            </div>
+        </div>
+
+    </main>
+    <!-- FIN DEL MAIN -->
+
+
+    <!-- FOOTER -->
+    <footer>
+        <img src="../imgs/Logo.png" alt="Logo de Upa Lalá Store">
+        <div>
+            <p id="fecha-actual"></p>
+            <div>
+                <p>Copyright © Upa Lalá Store 2021. Todos los derechos reservados.</p>
+                <small>Imágenes de catálogo extraídas de amazon.com</small>
+            </div>
+        </div>
+        <div>
+            <a href="https://www.facebook.com/" target="_blank">
+                <img src="../imgs/facebook.png" alt="Ícono de Fcaebook">
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+                <img src="../imgs/instagram.png" alt="Ícono de Instagram">
+            </a>
+            <a href="mailto:upalalauy@gmail.com" target="_blank">
+                <img src="../imgs/gmail.png" alt="Ícono de Gmail">
+            </a>
+        </div>
+    </footer>
+    <!-- FIN DEL FOOTER -->
+
+    <!-- SCRIPTS -->
+    <script src="../js/usuarios.js"></script>
+    <script src="../js/login.js"></script>
+
+</body>

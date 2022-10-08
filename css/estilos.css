@@ -1,0 +1,786 @@
+/* Fuentes: Montserrat & Baloo2 */
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;700&family=Montserrat:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+/* ----- Fuentes ----- */
+h1 {
+    font-family: 'Baloo 2', cursive;
+}
+
+/* ----- Librería de colores ----- */
+:root {
+    --var-yellow: #FBAB2B;
+    --var-cyan: #36DED8;
+    --var-pink: #FF599A;
+    --var-green: #008F39;
+    --var-red: #dc143c;
+    --var-gray: #bababa;
+    --var-white: #f5f5f5;
+}
+
+
+/* ----- Clases reutilizables ----- */
+.centrado-grande {
+    margin: 0 auto;
+    width: 95%;
+}
+
+.centrado-mediano {
+    margin: 0 auto;
+    width: 75%;
+}
+
+.centrado-chico {
+    margin: 0 auto;
+    width: 50%;
+}
+
+.activo {
+    color: var(--var-pink);
+
+}
+
+.btn-rosa {
+    background-color: var(--var-white);
+    border: solid 2px var(--var-pink);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2.5rem;
+    padding: 1rem 2rem;
+    font-weight: bold;
+    transition: all .5s;
+    cursor: pointer;
+}
+
+.btn-rosa:hover {
+    background-color: var(--var-pink);
+    color: var(--var-white);
+}
+
+.btn-cyan {
+    background-color: var(--var-white);
+    border: solid 2px var(--var-cyan);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2.5rem;
+    padding: 1rem 2rem;
+    font-weight: bold;
+    transition: all 1s;
+    cursor: pointer;
+}
+
+.btn-cyan:hover {
+    background-color: var(--var-cyan);
+    color: var(--var-white);
+}
+
+.btn-carrito {
+    background-color: var(--var-pink);
+    border-radius: 2.5rem;
+    padding: 1rem 2rem;
+    font-weight: bold;
+    transition: all 1s;
+    cursor: pointer;
+}
+
+.btn-carrito:hover {
+    background-color: var(--var-cyan);
+}
+
+.link {
+    color: var(--var-pink);
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.link:hover {
+    color: var(--var-cyan);
+}
+
+.flex-row {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* ---------- HEADER ---------- */
+header>div {
+    background-color: var(--var-pink);
+    padding: 1.25rem 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo {
+    max-width: 6.125rem;
+
+}
+
+header ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header ul li {
+    list-style-type: none;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: 700;
+}
+
+/* Botones Header */
+header>div ul {
+    width: 10vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    grid-area: .5rem;
+    gap: 1.25rem;
+}
+
+header>div ul li {
+    background-color: var(--var-white);
+    text-align: center;
+    flex: 1;
+    padding: .3rem .5rem;
+    border-radius: 0.313rem;
+}
+
+
+/* Navegador */
+nav {
+    padding: 1.25rem 0;
+    justify-content: space-around;
+
+}
+
+nav ul li a {
+    color: #000000;
+    font-weight: 500;
+}
+
+nav ul li a:hover {
+    color: var(--var-pink);
+
+}
+
+/* ---------- FOOTER ----------- */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    gap: 1.25rem;
+    padding: 2rem;
+    background-color: var(--var-pink);
+}
+
+footer>img {
+    width: 40%;
+    max-width: 100px;
+}
+
+footer>div:nth-child(2) {
+    min-height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2.5rem;
+
+}
+
+footer a {
+    text-decoration: none;
+    display: inline-block;
+    background-color: var(--var-white);
+    border-radius: 0.313rem;
+    padding: 0.313rem 0.313rem 0 0.313rem;
+}
+
+
+/* ************************************************************************** */
+
+/* ---------- PÁGINA INDEX ---------- */
+
+/* ---------- Hero section (Carrusel) - Index ---------- */
+.carrusel-contenedor {
+    width: 100%;
+    position: relative;
+
+}
+
+.carrusel-contenedor>div {
+    max-width: 450px;
+    min-height: 450px;
+    background: url(../imgs/fondo-patitos.png) no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 30%;
+    left: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2.5rem;
+}
+
+.carrusel-contenedor>div div {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: .5rem;
+
+}
+
+#carrusel-imgs {
+    margin: 0 auto;
+    background-color: var(--var-white);
+    width: 100%;
+
+
+}
+
+.previo-btn,
+.siguiente-btn {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    padding: 1rem;
+    background-color: var(--var-white);
+    transition: 0.6s ease;
+    border-radius: 50%;
+    border: solid 2px var(--var-cyan);
+}
+
+.previo-btn {
+    left: 2.5rem;
+}
+
+
+.siguiente-btn {
+    right: 2.5rem;
+}
+
+
+.previo-btn:hover,
+.siguiente-btn:hover {
+    background-color: var(--var-cyan)
+}
+
+/* ----------- Primer sección - Index ----------- */
+#primer-seccion {
+    min-height: 40vh;
+    padding: 2.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+#primer-seccion article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.25rem;
+}
+
+/* ---------- Segunda sección - Index ----------- */
+#segunda-seccion {
+    padding: 5rem 0;
+}
+
+#segunda-seccion div {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0.625rem;
+}
+
+#segunda-seccion figure img {
+    height: 100%;
+    border-radius: 1.25rem;
+    position: relative;
+}
+
+#segunda-seccion div figure:nth-child(1) {
+    grid-row: span 2;
+}
+
+
+/* ************************************************************************** */
+
+/* ---------- PÁGINA CATÁLOGO ---------- */
+
+/* ---------- Portada - Catálogo ----------- */
+#portada-catalogo {
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../imgs/portada-catalogo.jpg);
+    background-size: cover;
+}
+
+/* ---------- Primer sección - Catálogo ----------- */
+#primer-seccion-catalogo {
+    display: flex;
+    gap: 1.25rem;
+    padding: 2.5rem;
+
+}
+
+/* Filtros */
+#filtros {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 2.5rem;
+}
+
+#filtros img {
+    width: 64px;
+}
+
+#filtros>div {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+#filtros>div div {
+    display: flex;
+    justify-content: space-around;
+}
+
+#filtros input,
+#filtros select {
+    width: 100%;
+    height: 3rem;
+    border-radius: 2.5rem;
+    border: solid 2px rgb(186, 186, 186);
+    padding: 0 1.25rem;
+}
+
+#filtros h3, #informacion-producto h3 {
+    width: 100%;
+    padding: .5rem;
+    background-color: var(--var-cyan);
+    color: var(--var-white);
+    border-bottom: solid 2px var(--var-pink);
+}
+
+
+/* Productos */
+
+#catalogo-productos {
+    flex: 3;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 1.25rem;
+}
+
+.card-producto {
+    max-width: 20vw;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.card-producto img {
+    max-width: 300px;
+}
+
+.precio-producto {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2.5rem .5rem;
+    border-radius: 50% 50% 5% 5%;
+    text-align: center;
+    transition: all 1s;
+}
+
+.precio-producto:hover {
+    background-color: var(--var-cyan);
+    color: var(--var-pink);
+
+}
+
+.btn-card-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    gap: .2rem;
+}
+
+.btn-card {
+    background-color: var(--var-cyan);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    padding: 1rem;
+    font-weight: bold;
+    transition: all .5s;
+    cursor: pointer;
+}
+
+.btn-card:hover {
+    background-color: var(--var-pink);
+}
+
+
+
+/* ************************************************************************** */
+
+/* ---------- PÁGINA DETALLE ---------- */
+
+/* ---------- Portada - Detalle ----------- */
+#portada-detalle {
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../imgs/portada-detalle.jpg) top center;
+    background-size: cover;
+}
+
+#portada-detalle a {
+    align-self: flex-start;
+    position: absolute;
+    left: 1.25rem;
+    background-color: #f5f5f5;
+    padding: .5rem;
+
+}
+
+/* ---------- Primer sección - Detalle ----------- */
+#primer-seccion-detalle {
+    display: flex;
+    padding: 5rem 0;
+    gap: 2.5rem;
+}
+
+#primer-seccion-detalle div:nth-child(1) {
+    display: flex;
+    justify-content: stretch;
+    align-items: flex-start;
+    gap: 1.25rem;
+}
+
+/* Imágenes producto */
+#imagenes-chicas {
+    max-width: 10rem;
+    border: 1px solid var(--var-gray);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    padding: .5rem;
+    gap: 1.25rem;
+
+}
+
+#imagenes-chicas img {
+    width: 100%;
+}
+
+#imagen-grande img {
+    padding: 1.25rem;
+    border-radius: 1rem;
+    border: 1px solid var(--var-gray);
+}
+
+/* Información producto */
+
+#informacion-producto {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 2.5rem;
+}
+
+#informacion-producto div {
+    border-bottom: solid 2px var(--var-pink);
+    padding: .5rem;
+}
+
+/* Productos relacionados */
+#productos-relacionados {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#productos-relacionados img {
+    max-width: 200px;
+}
+
+
+
+/* ************************************************************************** */
+
+/* ---------- PÁGINA CONTACTO ---------- */
+
+/* ---------- Portada - Contacto ----------- */
+#portada-contacto {
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../imgs/portada-contacto.jpg) bottom center;
+    background-size: cover;
+}
+
+/* ---------- Primer sección - Contacto ----------- */
+#primer-seccion-contacto {
+    min-height: 70vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#primer-seccion-contacto div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1.25rem;
+
+}
+
+#primer-seccion-contacto div h4 {
+    color: var(--var-pink);
+}
+
+#primer-seccion-contacto div img {
+    max-width: 64px;
+    padding: .3rem;
+    border-radius: .8rem;
+}
+
+#primer-seccion-contacto div img:hover {
+    background-color: var(--var-pink);
+}
+
+#segunda-seccion-contacto h2 {
+    color: var(--var-pink);
+}
+
+/* Segunda sección (Formulario) - Contacto */
+#segunda-seccion-contacto {
+    padding-bottom: 5rem;
+}
+
+#segunda-seccion-contacto form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+    border: none;
+}
+
+#campo-nombre,
+#campo-correo,
+#ampo-telefono,
+#campo-mensaje,
+#campo-bases,
+.campo-botones,
+.formulario-mensaje-error,
+.formulario-mensaje-exito {
+    grid-column: span 2;
+}
+
+#segunda-seccion-contacto form label {
+    color: var(--var-pink);
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.inputs {
+    width: 100%;
+    min-height: 3rem;
+    border: solid 2px var(--var-gray);
+    border-radius: 3rem;
+    padding: 0 1.25rem;
+    color: #868686;
+}
+
+#segunda-seccion-contacto form span {
+    color: var(--var-red);
+    font-size: 16px;
+}
+
+
+#id-mensaje {
+    width: 100%;
+    border-radius: 1.25rem;
+    padding-left: 1.25rem;
+    color: var(--var-gray);
+}
+
+#campo-bases {
+    display: flex;
+    gap: .5rem;
+}
+
+/* Estilos campos con error */
+.input-error {
+    font-size: 0.75rem;
+    font-weight: bold;
+    color: var(--var-red);
+
+}
+
+.mensaje-error {
+    grid-column: span 2;
+    width: 100%;
+    height: 2.813rem;
+    line-height: 2.813rem;
+    border: solid 2px var(--var-red);
+    color: var(--var-red);
+    font-weight: bold;
+    padding: 0 0.938rem;
+    border-radius: 3px;
+    display: none;
+}
+
+.mensaje-error-activo {
+    display: block;
+}
+
+
+/* Estilos campos exitosos */
+
+.mensaje-exito {
+    width: 100%;
+    font-size: 0.875rem;
+    font-weight: bold;
+    color: var(--var-green);
+    display: none;
+    text-align: center;
+}
+
+.mensaje-exito-activo {
+    display: block;
+}
+
+.campo-botones input {
+    width: 100%;
+    margin: 10px;
+}
+
+
+/* ************************************************************************** */
+
+/* ---------- PÁGINA LOGIN ---------- */
+#main-login {
+    height: 100vh;
+    background: url(../imgs/portada-login.jpg);
+    background-size: cover;
+}
+
+/* Modal */
+.modal {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mostrar-form {
+    visibility: visible;
+    opacity: 1;
+}
+
+.login-fondo {
+    position: absolute;
+    background: black;
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+}
+
+.login-contenedor {
+    width: 50%;
+    border-radius: 1.25rem;
+    background: url(../imgs/fondo-rosa.jpg);
+    background-size: cover;
+    position: relative;
+    padding: 30px;
+}
+
+#login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+
+}
+
+#login-submit {
+    width: 100%;
+    cursor: pointer;
+    outline: none;
+}
+
+#login-error {
+    font-size: .9rem;
+}
+
+#saludo {
+    align-self: flex-end;
+    display: none;
+}
+
+#cerrar-login-btn {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    outline: none;
+    appearance: none;
+    color: #000000;
+    background-color: var(--var-white);
+    border: solid 2px var(--var-cyan);
+    border-radius: 100%;
+    padding: .3rem .5rem;
+    cursor: pointer;
+    font-size: .9rem;
+}
+
+#cerrar-login-btn:hover {
+    background-color: var(--var-cyan);
+    color: var(--var-white);
+}

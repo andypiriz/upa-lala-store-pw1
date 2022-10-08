@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo | Upa Lalá Store</title>
+    <!-- Hoja de estilos -->
+    <link rel="stylesheet" href="../css/estilos.css">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../imgs/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <div>
+            <a href="../index.html">
+                <img src="../imgs/logo-sin-texto.png" alt="Logo de Upa Lalá Store" id="logo">
+            </a>
+            <ul>
+                <li>
+                    <a href="">
+                        <img src="../imgs/lupa.svg" alt="Ícono de lupa">
+                    </a>
+                </li>
+                <li>
+                    <a href="login.html">
+                        <img src="../imgs/usuario.svg" alt="Ícono de usuario">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="../imgs/carrito.svg" alt="Ícono de bolsa de compras">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <nav>
+            <ul class="centrado-chico">
+                <li>
+                    <a href="../index.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="#" class="activo">Catálogo</a>
+                </li>
+                <li>
+                    <a href="#">Blog</a>
+                </li>
+                <li>
+                    <a href="contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- FIN DEL HEADER -->
+
+    <!-- MAIN -->
+    <main>
+        <!-- Portada -->
+        <div id="portada-catalogo">
+            <div>
+                <h1>Productos</h1>
+                <p>Inicio > Catálogo</p>
+            </div>
+        </div>
+
+        <!-- Primer sección  -->
+        <section id="primer-seccion-catalogo">
+
+            <!-- Filtros -->
+            <div id="filtros">
+
+                <!-- Por categoría -->
+                <div>
+                    <h3>Categorías</h3>
+                    <select id="categorias">
+                    </select>
+                </div>
+
+                <!-- Por precio -->
+                <div id="filtrado-precio">
+                    <h3>Precio</h3>
+                    <input type="number" id="precio-minimo" placeholder="Mínimo">
+                    <input type="number" id="precio-maximo" placeholder="Máximo">
+                </div>
+
+                <!-- Por estado del producto -->
+                <div id="filtrado-estado">
+                    <h3>Estado</h3>
+                    <div>
+                        <figure>
+                            <img src="../imgs/nuevo.png" alt="Ícono de producto nuevo" title="nuevo">
+                            <figcaption>Productos <br> nuevos</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="../imgs/usado.png" alt="Ícono de producto reciclado" title="usado">
+                            <figcaption>Productos <br> usados</figcaption>
+                        </figure>
+                    </div>
+                </div>
+
+                <!-- Por búsqueda -->
+                <div id="buscador">
+                    <h3>Buscar</h3>
+                    <div>
+                        <input type="search" id="input-buscar" placeholder="Buscar producto">
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Productos filtrados -->
+            <div id="catalogo-productos"></div>
+
+        </section>
+    </main>
+    <!-- FIN DEL MAIN -->
+
+    <!-- FOOTER -->
+    <footer>
+        <img src="../imgs/Logo.png" alt="Logo de Upa Lalá Store">
+        <div>
+            <p id="fecha-actual"></p>
+            <div>
+                <p>Copyright © Upa Lalá Store 2021. Todos los derechos reservados.</p>
+                <small>Imágenes de catálogo extraídas de amazon.com</small>
+            </div>
+        </div>
+        <div>
+            <a href="https://www.facebook.com/" target="_blank">
+                <img src="../imgs/facebook.png" alt="Ícono de Fcaebook">
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+                <img src="../imgs/instagram.png" alt="Ícono de Instagram">
+            </a>
+            <a href="mailto:upalalauy@gmail.com" target="_blank">
+                <img src="../imgs/gmail.png" alt="Ícono de Gmail">
+            </a>
+        </div>
+    </footer>
+    <!-- FIN DEL FOOTER -->
+
+    <!-- SCRIPTS -->
+    <script src="../js/productos.js"></script>
+    <script src="../js/catalogo.js"></script>
+</body>
+
+</html>
